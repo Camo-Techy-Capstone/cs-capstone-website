@@ -1,0 +1,88 @@
+html, body, .main-wrapper {
+	height: 100vh;
+	overflow-x: hidden;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 300;
+	color: white;
+	background: white;
+}
+header {
+	background-color: rgba(28, 36, 65, 0.93);
+	font-weight: 400;
+	min-height: 300px;
+}
+h1, h2, h3, h4 {
+	font-weight: 400;
+}
+h5 {
+	font-weight: 700;
+}
+.intro-tables {
+	min-height: 100px;
+	position: relative;
+
+}
+.intro-tables a {
+	font-weight: 700;
+	text-decoration: none;
+	color: white;
+	transition: all 300ms ease;
+	background-color: grey;
+	border-radius: 10px;
+	display: flex;
+	padding: 1rem;
+	background-size: 300% 100%;
+	background-position: 100%;
+}
+.intro-tables a:hover {
+	text-decoration: none;
+	transform: scale(1.04); background-position: 0 300%;
+}
+.civil-btn {
+	background: linear-gradient(to right, steelblue, steelblue 40%, white 50%, skyblue 54%, steelblue 54%);
+}
+.cs-btn {
+	background: linear-gradient(to right, limegreen, limegreen 40%, white 50%, lime 54%, limegreen 54%);
+}
+.mech-btn {
+	background: linear-gradient(to right, firebrick, firebrick 40%, white 50%, indianred 54%, firebrick 54%);
+}
+.elec-btn {
+	background: linear-gradient(to right, tomato, tomato 40%, white 50%, coral 54%, tomato 54%);
+}
+
+header .typed {
+	display: inline-block;
+	margin: 0;
+}
+
+header .typed-cursor {
+	font-size: 60px;
+	display: inline-block;
+	margin: 0 10px;
+	color: #00a8ff;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.finished-typing .typed-cursor {
+	margin: 0;
+	width: 0!important;
+	visibility: hidden;
+}
+
+.intro-tables-bg {
+	position: absolute;
+	background-color: rgba(28, 36, 65, 0.93);
+	top: 0;
+	height: 20px;
+	left: 0;
+	right: 0;
+}
+
+
+
