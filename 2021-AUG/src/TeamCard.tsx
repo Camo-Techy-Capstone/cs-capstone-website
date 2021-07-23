@@ -36,6 +36,7 @@ const TeamCard = (props: Props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
+		      style={{backgroundSize: "contain"}}
           image={`images/logos/${logo}`}
           title={name}
         />
