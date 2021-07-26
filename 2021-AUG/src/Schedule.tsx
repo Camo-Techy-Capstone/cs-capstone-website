@@ -1,22 +1,42 @@
 import React, { ReactElement } from 'react';
 import { Container, Typography, Table, TableContainer, Paper, TableRow, TableHead, TableBody, TableCell } from '@material-ui/core';
-import { makeStyles } from "@material-ui/core/styles";
-
-function createData(name: string, calories: number, fat: number, carbs: number, protein: number) {
-    return { name, calories, fat, carbs, protein };
-  }
-
-const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-  ];
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 
 
-const Schedule = (): ReactElement => {
+
+
+const StyledTableCell = withStyles((theme) => ({
+    head: {
+      backgroundColor: theme.palette.primary.light,
+      color: theme.palette.common.white,
+      fontsize: 20,
+    },
+    body: {
+      fontSize: 16,
+    },
+  }))(TableCell);
+
+type Props = {
+    scheduleList: Array<{
+        timeSlot?: string,
+        firstGroup: {
+            name: string,
+            teamId?: string,
+            link?: string,
+        },
+        secondGroup: {
+            name: string,
+            teamId?: string,
+            link?: string,
+        }
+    }>,
+}
+
+
+const Schedule = ({
+    scheduleList
+}: Props): ReactElement => {
     return (
         <Container>
             <Typography variant="h4" component="h2" align="center">
@@ -25,24 +45,18 @@ const Schedule = (): ReactElement => {
             <TableContainer component={Paper}>
                 <Table aria-label="simple table">
                     <TableHead>
-                    <TableRow>
-                        <TableCell>Dessert (100g serving)</TableCell>
-                        <TableCell align="right">Calories</TableCell>
-                        <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                        <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                        <TableCell align="right">Protein&nbsp;(g)</TableCell>
-                    </TableRow>
+                        <TableRow>
+                            <StyledTableCell>Time slot</StyledTableCell>
+                            <StyledTableCell align="right">First Group</StyledTableCell>
+                            <StyledTableCell align="right">Second Group</StyledTableCell>
+                        </TableRow>
                     </TableHead>
                     <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.name}>
-                        <TableCell component="th" scope="row">
-                            {row.name}
-                        </TableCell>
-                        <TableCell align="right">{row.calories}</TableCell>
-                        <TableCell align="right">{row.fat}</TableCell>
-                        <TableCell align="right">{row.carbs}</TableCell>
-                        <TableCell align="right">{row.protein}</TableCell>
+                    {scheduleList.map((row) => (
+                        <TableRow key={row.timeSlot}>
+                        <StyledTableCell component="th" scope="row">{row.timeSlot}</StyledTableCell>
+                        <StyledTableCell align="right">{row.firstGroup.name}</StyledTableCell>
+                        <StyledTableCell align="right">{row.secondGroup.name}</StyledTableCell>
                         </TableRow>
                     ))}
                     </TableBody>

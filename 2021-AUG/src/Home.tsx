@@ -4,7 +4,9 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import teams from "./teams";
 import TeamCard from "./TeamCard";
+// schedule
 import Schedule from "./Schedule";
+import getSchedules from "./schedules";
 
 type Props = {};
 
@@ -18,7 +20,7 @@ const Home = (props: Props) => {
           </Box>
         ))}
       </Box>
-      <Schedule />
+      <Schedule scheduleList={getSchedules()} />
     </Container>
   );
 };
