@@ -35,9 +35,7 @@ const TeamLink = ({ teamInfo }: {teamInfo: TeamInfoType}): ReactElement => {
 }
 
 
-const Schedule = ({
-    scheduleList
-}: Props): ReactElement => {
+const Schedule = ({ scheduleList }: Props): ReactElement => {
     return (
         <Container>
             <Typography variant="h4" component="h2" align="center">

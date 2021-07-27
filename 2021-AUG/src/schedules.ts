@@ -95,7 +95,7 @@ const getSchedules = () => {
         if(roundCount == 0){
             for(let i = 0; i < teamList.length; i+=2){
                 scheduleList.push({
-                    timeSlot: current.format("h:mm:ss A"),
+                    timeSlot: current.format("h:mm A"),
                     firstGroup: teamList[i],
                     secondGroup: teamList[i+1],
                 });
@@ -105,9 +105,9 @@ const getSchedules = () => {
         }else if(roundCount == 1){
             // set up lunch time
             for(let i = 0; i < 4; i++){
-                console.log(current.format("h:mm:ss A"));
+                console.log(current.format("h:mm A"));
                 scheduleList.push({
-                    timeSlot: current.format("h:mm:ss A"),
+                    timeSlot: current.format("h:mm A"),
                     firstGroup: {
                         name: "Lunch",
                         link: "#",
@@ -124,7 +124,7 @@ const getSchedules = () => {
             // set up second round
             for(let i = 0; i < teamList.length; i+=2){
                 scheduleList.push({
-                    timeSlot: current.format("h:mm:ss A"),
+                    timeSlot: current.format("h:mm A"),
                     firstGroup: teamList[i+1],
                     secondGroup: teamList[i],
                 });
@@ -136,7 +136,7 @@ const getSchedules = () => {
             // set up network time
             for(let i = 0; i < 7; i++){
                 scheduleList.push({
-                    timeSlot: current.format("h:mm:ss A"),
+                    timeSlot: current.format("h:mm A"),
                     firstGroup: {
                         name: "Network",
                         link: "#",
@@ -150,7 +150,6 @@ const getSchedules = () => {
             }
             roundCount++;
         } 
-               
     }
     return scheduleList;
 }
