@@ -13,7 +13,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <Container maxWidth="lg">
-      <Box display="flex" flexWrap="wrap">
+      <Box display="flex" flexWrap="wrap" justifyContent="center">
         {teams.map((team) => (
           <Box m={2} key={team.name}>
             <TeamCard {...team} />
