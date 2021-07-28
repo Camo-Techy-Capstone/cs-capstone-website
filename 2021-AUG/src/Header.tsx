@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  AppBar,
-  Button,
-  IconButton,
-  Link,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { Link, NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,22 +29,34 @@ const Header = () => {
           ICS Capstone Symposium 2021
         </Typography>
         <Typography className={classes.links}>
-          <Link href="#" style={{ color: "white" }}>
+          <NavLink
+            to="/"
+            style={{ color: "white", textDecoration: "none" }}
+            activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
+          >
             Teams
-          </Link>
-          <Link href="/#/2021-schedule" style={{ color: "white" }}>
+          </NavLink>
+          <NavLink
+            to="/schedule"
+            style={{ color: "white", textDecoration: "none" }}
+            activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
+          >
             Schedule
-          </Link>
-          <Link
+          </NavLink>
+          <a
             href="https://www.eventbrite.ca/e/camosun-ics-capstone-symposium-2021-registration-164049940789"
             target="_blank"
-            style={{ color: "white" }}
+            style={{ color: "white", textDecoration: "none" }}
           >
             Register
-          </Link>
-          <Link href="#" style={{ color: "white" }}>
+          </a>
+          <NavLink
+            to="/"
+            style={{ color: "white", textDecoration: "none" }}
+            activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
+          >
             Donors
-          </Link>
+          </NavLink>
         </Typography>
       </Toolbar>
     </AppBar>

@@ -2,7 +2,7 @@
   "name": "cs-capstone-2021",
   "version": "4.0.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://capstone.camosun.bc.ca/cosc/2021",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.11.2",

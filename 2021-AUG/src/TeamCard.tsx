@@ -6,10 +6,10 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { Box, Link } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import slugify from "slugify";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -37,7 +37,7 @@ const TeamCard = (props: Props) => {
         <CardMedia
           className={classes.media}
           style={{ backgroundSize: "contain" }}
-          image={`images/logos/${logo}`}
+          image={`/cosc/2021/images/logos/${logo}`}
           title={name}
         />
         <CardContent>
@@ -53,7 +53,12 @@ const TeamCard = (props: Props) => {
       </CardActionArea>
       <CardActions>
         <Typography>
-          <Link href={`/#/teams/${slugify(name)}`}>Learn More</Link>
+          <Link
+            to={`/teams/${slugify(name)}`}
+            style={{ textDecoration: "none" }}
+          >
+            Learn More
+          </Link>
         </Typography>
       </CardActions>
     </Card>
