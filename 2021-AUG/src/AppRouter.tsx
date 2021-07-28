@@ -11,7 +11,7 @@ export const AppRouter = (props: Props) => {
   return (
     <HashRouter>
       <AppRoute exact path="/" component={Home} />
-      <AppRoute exact path="/:slug" component={TeamBios} />
+      <AppRoute exact path="/teams/:slug" component={TeamBios} />
       <AppRoute exact path="/2021-schedule" component={PresentationStage} />
     </HashRouter>
   );

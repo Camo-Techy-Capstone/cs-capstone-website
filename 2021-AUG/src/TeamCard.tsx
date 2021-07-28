@@ -36,7 +36,7 @@ const TeamCard = (props: Props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-		      style={{backgroundSize: "contain"}}
+          style={{ backgroundSize: "contain" }}
           image={`images/logos/${logo}`}
           title={name}
         />
@@ -53,7 +53,7 @@ const TeamCard = (props: Props) => {
       </CardActionArea>
       <CardActions>
         <Typography>
-          <Link href={`/#/${slugify(name)}`}>Learn More</Link>
+          <Link href={`/#/teams/${slugify(name)}`}>Learn More</Link>
         </Typography>
       </CardActions>
     </Card>
