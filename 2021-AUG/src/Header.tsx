@@ -1,6 +1,6 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
-import { Link, NavLink } from "react-router-dom";
+import { AppBar, Box, Toolbar, Typography } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: "white",
   },
   links: {
     "& > * + *": {
@@ -26,7 +27,12 @@ const Header = () => {
     <AppBar position="fixed">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          ICS Capstone Symposium 2021
+          <a
+            href="https://capstone.camosun.bc.ca/cosc"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            ICS Capstone Symposium 2021
+          </a>
         </Typography>
         <Typography className={classes.links}>
           <NavLink
