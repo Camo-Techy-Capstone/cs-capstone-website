@@ -19,6 +19,9 @@ const useStyles = makeStyles({
     height: 150,
     objectFit: "scale-down",
   },
+  bold: {
+    fontWeight: "bold",
+  }
 });
 
 type Props = {
@@ -41,7 +44,7 @@ const TeamCard = (props: Props) => {
           title={name}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom className={classes.bold} component="h2">
             {name}
           </Typography>
           <Box maxHeight="58px" textOverflow="ellipsis" overflow="auto">
