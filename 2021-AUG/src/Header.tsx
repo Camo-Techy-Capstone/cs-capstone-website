@@ -48,7 +48,7 @@ const Header = () => {
           >
             Register
           </Link>
-          <Link href="#" style={{ color: "white" }}>
+          <Link href="/#/donors" style={{ color: "white" }}>
             Donors
           </Link>
         </Typography>
