@@ -388,10 +388,10 @@ const teams = [
     ],
   },
   {
-    name: "THE UNFORGETTABLES",
+    name: "The Unforgettables",
     intro:
       "We offer a safe place for clients and healers to meet. In this platform, healers can share their gifts, clients can search for their best healer match, and record their healing progress.",
-    logo: "",
+    logo: "Unforgettables_logo.png",
     opening: [
       {
         content:
