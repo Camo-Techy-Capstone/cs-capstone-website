@@ -15,10 +15,12 @@ const TeamBios = () => {
     ({ name }) => slug === slugify(name)
   );
   if (!team) {
-    alert(`Team ${slug} not found`);
     useHistory().push("/");
     return <></>;
   }
+
+  window.scrollTo(0, 0);
+
   const { name, logo, opening, closing, members } = team;
   return (
     <Container maxWidth="md">

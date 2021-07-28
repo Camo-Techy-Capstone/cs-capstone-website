@@ -2,11 +2,13 @@
   "name": "cs-capstone-2021",
   "version": "4.0.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.11.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "moment": "^2.29.1",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "^5.2.0",

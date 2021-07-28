@@ -36,6 +36,7 @@ const TeamCard = (props: Props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
+          style={{ backgroundSize: "contain" }}
           image={`images/logos/${logo}`}
           title={name}
         />
@@ -43,7 +44,7 @@ const TeamCard = (props: Props) => {
           <Typography gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
-          <Box maxHeight="56px" textOverflow="ellipsis" overflow="hidden">
+          <Box maxHeight="58px" textOverflow="ellipsis" overflow="auto">
             <Typography variant="body2" color="textSecondary" component="p">
               {intro}
             </Typography>
@@ -52,7 +53,7 @@ const TeamCard = (props: Props) => {
       </CardActionArea>
       <CardActions>
         <Typography>
-          <Link href={`/#/${slugify(name)}`}>Learn More</Link>
+          <Link href={`/#/teams/${slugify(name)}`}>Learn More</Link>
         </Typography>
       </CardActions>
     </Card>
