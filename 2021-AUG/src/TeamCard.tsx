@@ -41,7 +41,7 @@ const TeamCard = (props: Props) => {
           title={name}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom component="h2">
             {name}
           </Typography>
           <Box maxHeight="58px" textOverflow="ellipsis" overflow="auto">
