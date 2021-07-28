@@ -53,7 +53,7 @@ const TeamCard = (props: Props) => {
       </CardActionArea>
       <CardActions>
         <Typography>
-          <Link href={`/#/${slugify(name)}`}>Learn More</Link>
+          <Link href={`/#/teams/${slugify(name)}`}>Learn More</Link>
         </Typography>
       </CardActions>
     </Card>

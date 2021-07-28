@@ -38,10 +38,14 @@ const Header = () => {
           <Link href="#" style={{ color: "white" }}>
             Teams
           </Link>
-          <Link href="#schedule" style={{ color: "white" }}>
+          <Link href="/#/2021-schedule" style={{ color: "white" }}>
             Schedule
           </Link>
-          <Link href="#" style={{ color: "white" }}>
+          <Link
+            href="https://www.eventbrite.ca/e/camosun-ics-capstone-symposium-2021-registration-164049940789"
+            target="_blank"
+            style={{ color: "white" }}
+          >
             Register
           </Link>
           <Link href="#" style={{ color: "white" }}>

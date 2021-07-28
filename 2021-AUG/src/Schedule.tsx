@@ -49,8 +49,8 @@ const TeamLink = ({ teamInfo }: { teamInfo: TeamInfoType }): ReactElement => {
 
 const Schedule = ({ scheduleList }: Props): ReactElement => {
   return (
-    <Container id="schedule">
-      <Box pt={10} pb={4}>
+    <Container>
+      <Box my={4}>
         <Typography variant="h4" component="h2" align="center">
           Symposium Schedule and Link
         </Typography>
