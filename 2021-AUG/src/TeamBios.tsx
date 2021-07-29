@@ -21,12 +21,12 @@ const TeamBios = () => {
 
   window.scrollTo(0, 0);
 
-  const { name, logo, opening, closing, members } = team;
+  const { name, project, logo, opening, closing, members } = team;
   return (
     <Container maxWidth="md">
       <Box textAlign="center" my={4}>
         <Typography variant="h3" style={{ fontWeight: "bold" }}>
-          {name}
+          {project || name}
         </Typography>
       </Box>
       {opening.map((paragraph, index) => (
