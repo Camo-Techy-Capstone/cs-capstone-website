@@ -97,7 +97,8 @@ const teams = [
     ],
   },
   {
-    name: "Utopian Moon: Salvage Run",
+    name: "The Code Queens",
+    project: "Utopian Moon: Salvage Run!",
     intro:
       "is an immersive space race game created in Unity featuring completely original models, customized physics, intelligent procedural level generation, and integration with a server-side authentication and scoreboard system for competitive play.",
     logo: "3TreesGames.png",
@@ -308,7 +309,7 @@ const teams = [
   {
     name: "Point Cloud Initiative",
     intro:
-      'A traversable and interactable 3D simulation derived from scans of ship interiors called "point scans" after converting them into mesh.',
+      'A traversable and interactable 3D simulation derived from scans of ship interiors called "point cloud scans" after converting them into mesh.',
     logo: "3ga-logo-large.png",
     opening: [
       {
