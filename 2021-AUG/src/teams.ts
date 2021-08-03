@@ -567,7 +567,7 @@ const teams = [
     members: [
       {
         name: "Lucius Hall",
-        role: "Head of Written Communications, Technical Writer, Lead VFX Artist, UI/UX Designer, Co-programming Architect, 3D Modeller, and Photo/Video Editor.",
+        role: "Head of Written Communications, Technical Writer, Lead VFX Artist, UI/UX Designer, Co-programming Architect, 3D Modeler, and Photo/Video Editor.",
         description:
           "Lucius became inspired by his brother to explore web technologies. This led him to discover the Interactive Media Developer program where he acquired a passion for architectural programming, and UI / UX design. Now, he still holds a strong interest in web development and stays up to date with current trends, but for Capstone he decided to explore game development where he focused on system architecture, UI / UX design, VFX design, and technical writing. Upon graduation, Lucius seeks a career that will support his aforementioned passions, and bolster his desire to learn new skills and tinker with new technologies.",
       },
