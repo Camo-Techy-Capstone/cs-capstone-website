@@ -12,6 +12,7 @@ export interface Paragraph {
 
 export interface Team {
   name: string;
+  project?: string;
   logo: string;
   intro: string;
   opening: Paragraph[];

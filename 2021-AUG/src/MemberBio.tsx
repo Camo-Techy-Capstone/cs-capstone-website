@@ -28,7 +28,7 @@ const MemberBio = (props: Props) => {
       <Box width="200px" p={1} pt={2}>
         <CardMedia
           className={classes.media}
-          image={`images/faces/${name}.png`}
+          image={`/cosc/2021/images/faces/${name}.png`}
           title={name}
         />
       </Box>
