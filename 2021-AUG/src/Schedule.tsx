@@ -11,8 +11,9 @@ import {
   TableCell,
   Link,
   Box,
+  Divider
 } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -23,7 +24,15 @@ const StyledTableCell = withStyles((theme) => ({
   body: {
     fontSize: 16,
   },
+ 
 }))(TableCell);
+
+const useStyles = makeStyles(theme => ({
+    dividerWidth: {
+        width: '200px',
+        margin: '10px auto',
+    },
+}));
 
 type TeamInfoType = {
   name: string;
@@ -48,6 +57,7 @@ const TeamLink = ({ teamInfo }: { teamInfo: TeamInfoType }): ReactElement => {
 };
 
 const Schedule = ({ scheduleList }: Props): ReactElement => {
+    const classes = useStyles();
   return (
     <Container>
       <Box my={4}>
@@ -55,7 +65,15 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
           Symposium Schedule and Link
         </Typography>
         <Typography variant="subtitle1" align="center">
-          Click a team name below to go to the team.
+          To go to the main room, click on either of these links:
+        </Typography>
+        <Typography variant="subtitle1" align="center">
+        {/* will add the link later on */}
+          <Link href="#">Main room A</Link> | <Link href="#">Main room B</Link> 
+        </Typography>
+        <Divider variant="middle" className={classes.dividerWidth}/>
+        <Typography variant="subtitle1" align="center">
+          Click a team name below to go to the team room.
         </Typography>
       </Box>
       <TableContainer component={Paper}>
@@ -63,8 +81,8 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
           <TableHead>
             <TableRow>
               <StyledTableCell>Time slot</StyledTableCell>
-              <StyledTableCell align="right">First Group</StyledTableCell>
-              <StyledTableCell align="right">Second Group</StyledTableCell>
+              <StyledTableCell align="right">Main Room A</StyledTableCell>
+              <StyledTableCell align="right">Main Room B</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>

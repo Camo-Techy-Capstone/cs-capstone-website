@@ -396,7 +396,7 @@ const teams = [
     opening: [
       {
         content:
-          "The Woo Woo Net is a spiritual healing service connection centre operating under a booking system to offer paid services from a variety of healers. The goal of the Woo Woo Net project is to develop an open-source framework with a booking system tool that connects healer services to people seeking them. This enables easy access to spiritual healing services and appointments in modern format for people to find what they need to resolve issues within their life and evolve powerfully.",
+          "The Woo Woo Network is a spiritual healing service connection centre operating under a booking system to offer paid services from a variety of healers. The goal of the Woo Woo Net project is to develop an open-source framework with a booking system tool that connects healer services to people seeking them. This enables easy access to spiritual healing services and appointments in modern format for people to find what they need to resolve issues within their life and evolve powerfully.",
       },
       {
         content:

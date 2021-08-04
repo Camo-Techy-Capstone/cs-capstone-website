@@ -3,27 +3,27 @@ import moment from "moment";
 const teamList = [
   {
     teamId: "A",
-    name: "Checkfront",
+    name: "Team Checkfront",
     link: "#",
   },
   {
     teamId: "B",
-    name: "Rental Connections",
+    name: "Team Rental Connections",
     link: "#",
   },
   {
     teamId: "C",
-    name: "MeepMeep",
+    name: "Team MeepMeep",
     link: "#",
   },
   {
     teamId: "D",
-    name: "Cuboh",
+    name: "Team Cuboh",
     link: "#",
   },
   {
     teamId: "E",
-    name: "Dyspatch",
+    name: "Team Dyspatch",
     link: "#",
   },
   {
@@ -33,17 +33,12 @@ const teamList = [
   },
   {
     teamId: "G",
-    name: "RDSI",
+    name: "Team RDSI",
     link: "#",
   },
   {
     teamId: "H",
     name: "The Unforgettables",
-    link: "#",
-  },
-  {
-    teamId: "I",
-    name: "N/A",
     link: "#",
   },
   {
@@ -62,23 +57,18 @@ const teamList = [
     link: "#",
   },
   {
-    teamId: "M",
-    name: "Utopian Moon: Salvage Run",
-    link: "#",
-  },
-  {
-    teamId: "O",
-    name: "Rental Connections",
-    link: "#",
-  },
-  {
     teamId: "Q",
-    name: "N/A",
+    name: "The Code Queens Team",
     link: "#",
   },
+  {
+    teamId: "M",
+    name: "Team Five Goat Games",
+    link: "#",
+  },  
   {
     teamId: "P",
-    name: "Point Cloud Initiative",
+    name: "Team Point Cloud Initiative",
     link: "#",
   },
 ];
@@ -87,9 +77,20 @@ const getSchedules = () => {
   const scheduleList = [];
   let roundCount = 0;
   const startTime = moment({ hour: 10, minute: 0, second: 0 });
-  const endTime = moment({ hour: 16, minute: 30, second: 0 });
   let current = startTime;
   // set up the team until end of symposium day
+  scheduleList.push({
+    timeSlot: current.format("h:mm A"),
+    firstGroup: {
+      name: "Kick off",
+      link: "#",
+    },
+    secondGroup: {
+      name: "Kick off",
+      link: "#",
+    },
+  });
+  current.add(15, "minutes");
   while (roundCount <= 3) {
     // set up first round
     if (roundCount == 0) {
@@ -104,8 +105,7 @@ const getSchedules = () => {
       roundCount++;
     } else if (roundCount == 1) {
       // set up lunch time
-      for (let i = 0; i < 4; i++) {
-        console.log(current.format("h:mm A"));
+      for (let i = 0; i < 2; i++) {
         scheduleList.push({
           timeSlot: current.format("h:mm A"),
           firstGroup: {
@@ -132,8 +132,21 @@ const getSchedules = () => {
       }
       roundCount++;
     } else {
+      // set up conclusion
+      scheduleList.push({
+        timeSlot: current.format("h:mm A"),
+        firstGroup: {
+          name: "Conclusion",
+          link: "#",
+        },
+        secondGroup: {
+          name: "Conclusion",
+          link: "#",
+        },
+      });
+      current.add(15, "minutes");
       // set up network time
-      for (let i = 0; i < 7; i++) {
+      for (let i = 0; i < 3; i++) {
         scheduleList.push({
           timeSlot: current.format("h:mm A"),
           firstGroup: {
