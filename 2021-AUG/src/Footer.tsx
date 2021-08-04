@@ -23,7 +23,10 @@ const Footer = () => {
         </Box>
         <Box textAlign="center">
             <Typography>
-                &copy; {new Date().getFullYear()}: Camosun College
+              Created by the Computer Science graduating class of 2021
+            </Typography>
+            <Typography>
+              &copy; {new Date().getFullYear()}: Camosun College
             </Typography>
         </Box>
         
