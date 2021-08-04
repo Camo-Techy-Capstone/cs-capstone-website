@@ -57,7 +57,7 @@ const Header = () => {
             Register
           </a>
           <NavLink
-            to="/"
+            to="/donors"
             style={{ color: "white", textDecoration: "none" }}
             activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
           >
