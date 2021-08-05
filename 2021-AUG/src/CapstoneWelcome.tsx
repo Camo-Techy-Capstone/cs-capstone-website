@@ -56,7 +56,7 @@ const CapstoneWelcome = () => {
               return <GreetingBody variant="body1">{paragraph}</GreetingBody>
             }
           })}
-          <Signature variant="body2">Saryta Schaerer | Chair | Computer Science Department | School of Trades and Technology</Signature>
+          <Signature variant="body2">- Saryta Schaerer, Chair of Computer Science Department</Signature>
         </GreetingWrapper>
       </Grid>
       <Box my={5}><Divider/></Box>
