@@ -31,7 +31,7 @@ const Header = () => {
             href="https://capstone.camosun.bc.ca/cosc"
             style={{ color: "white", textDecoration: "none" }}
           >
-            ICS Capstone Symposium 2021
+            Computer Science Capstone Symposium 2021
           </a>
         </Typography>
         <Typography className={classes.links}>
