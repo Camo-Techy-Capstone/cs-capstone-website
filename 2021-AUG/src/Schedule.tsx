@@ -71,15 +71,20 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
           Symposium Schedule and Link
         </Typography>
         <Typography variant="subtitle1" align="center">
-          To go to the main room, click on either of these links:
+          To go to the main room, click on the link below
         </Typography>
         <Typography variant="subtitle1" align="center">
         {/* will add the link later on */}
-          <Link href="#">Main room A</Link> | <Link href="#">Main room B</Link> 
+          <Link target="_blank" href="https://camosun-ca.zoom.us/j/61630151922?pwd=dmNOa0I5RTJ5QjVCaG5FT1g5QXRhdz09">Main room </Link>
+        </Typography>
+        <Typography variant="subtitle1" align="center">
+        <b>Meeting ID:</b> 616 3015 1922
+        <br/>
+        <b>Passcode:</b> 184940
         </Typography>
         <Divider variant="middle" className={classes.dividerWidth}/>
         <Typography variant="subtitle1" align="center">
-          Click a team name below to go to the team room.
+          The table below is the meeting schedule
         </Typography>
       </Box>
       <TableContainer component={Paper}>
