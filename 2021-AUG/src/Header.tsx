@@ -56,6 +56,13 @@ const Header = () => {
           >
             Register
           </a>
+          <a
+            href="https://www.surveymonkey.ca/r/Capstone2021Award"
+            target="_blank"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Voting
+          </a>
           <NavLink
             to="/donors"
             style={{ color: "white", textDecoration: "none" }}
