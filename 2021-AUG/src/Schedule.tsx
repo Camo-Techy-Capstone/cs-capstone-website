@@ -32,19 +32,25 @@ const useStyles = makeStyles(theme => ({
         width: '200px',
         margin: '10px auto',
     },
+    specialCell:{
+      fontWeight: 'bold',
+      fontSize: 20,
+      marginLeft: '250px',
+    },
 }));
 
 type TeamInfoType = {
   name: string;
   teamId?: string;
   link?: string;
+  colSpan?: number;
 };
 
 type Props = {
   scheduleList: Array<{
     timeSlot?: string;
     firstGroup: TeamInfoType;
-    secondGroup: TeamInfoType;
+    secondGroup?: TeamInfoType;
   }>;
 };
 
@@ -65,15 +71,20 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
           Symposium Schedule and Link
         </Typography>
         <Typography variant="subtitle1" align="center">
-          To go to the main room, click on either of these links:
+          To go to the main room, click on the link below
         </Typography>
         <Typography variant="subtitle1" align="center">
         {/* will add the link later on */}
-          <Link href="#">Main room A</Link> | <Link href="#">Main room B</Link> 
+          <Link target="_blank" href="https://camosun-ca.zoom.us/j/61630151922?pwd=dmNOa0I5RTJ5QjVCaG5FT1g5QXRhdz09">Main room </Link>
+        </Typography>
+        <Typography variant="subtitle1" align="center">
+        <b>Meeting ID:</b> 616 3015 1922
+        <br/>
+        <b>Passcode:</b> 184940
         </Typography>
         <Divider variant="middle" className={classes.dividerWidth}/>
         <Typography variant="subtitle1" align="center">
-          Click a team name below to go to the team room.
+          The table below is the meeting schedule
         </Typography>
       </Box>
       <TableContainer component={Paper}>
@@ -91,12 +102,22 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
                 <StyledTableCell component="th" scope="row">
                   {row.timeSlot}
                 </StyledTableCell>
-                <StyledTableCell align="right">
-                  <TeamLink teamInfo={row.firstGroup} />
-                </StyledTableCell>
-                <StyledTableCell align="right">
-                  <TeamLink teamInfo={row.secondGroup} />
-                </StyledTableCell>
+                
+                {
+                  row.secondGroup ? (
+                    <>
+                      <StyledTableCell align="right">
+                        <TeamLink teamInfo={row.firstGroup} />
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        <TeamLink teamInfo={row.secondGroup} />
+                      </StyledTableCell>
+                    </>) : (
+                      <StyledTableCell colSpan={2} align="center" size="medium">
+                        <div className={classes.specialCell}>{ row.firstGroup.name } </div>
+                      </StyledTableCell>
+                  )
+                }
               </TableRow>
             ))}
           </TableBody>

@@ -440,13 +440,13 @@ const teams = [
       },
       {
         content:
-          "Team MeepMeep, consisting of Cory, Kegan, and Logan, have provided a fully functional and user-friendly iOS application that is ready for deployment. Our iOS app enables the user to connect to multiple MeepMeep trackers and send alerts to specific trackers. The alerts sent to trackers trigger an alarm to assist in locating lost discs.",
+          "Team MeepMeep, consisting of Cory, Kegan, and Logan, will provide a fully functional and user-friendly iOS application that is ready for deployment. Our iOS app will enable the user to connect to multiple MeepMeep trackers and send alerts to specific trackers. The alerts sent to trackers trigger an alarm on the disc to assist in locating the lost disc.",
       },
     ],
     closing: [
       {
         content:
-          "Our team is grateful for the opportunity and support that has been presented to us by Eve Olynyk and Simon Park of MeepMeep, and the Camosun College faculty. We have completed and delivered a stable, fully developed market-ready application. The application is easy to use for both adults and children and complies with the Canadian National Institute for the Blind (CNIB) standards.",
+          "Our team is grateful for the opportunity that has been presented to us by Eve Olynyk and Simon Park of MeepMeep. Team MeepMeep is optimistic about this project and looking forward to its successful completion.",
       },
     ],
     members: [
@@ -539,58 +539,6 @@ const teams = [
         description:
           "Ryan Hossack is hardworking and determined to meet and exceed the expectations set out by himself and others. After taking an interest in programming he enrolled in Camosun’s ICS program to pursue a career in\n" +
           "computer science. He is a fast learner with a sense for problem solving. His study at Camosun has only reaffirmed his passion for programming and his goal to become a software developer. Ryan is ready to further improve and grow by exploring new challenges.",
-      },
-    ],
-  },
-  {
-    name: "Five Goat Games",
-    intro:
-      "Team Five Goat Games is creating a 2.5D Metroidvania style platforming video game prototype spanning two playable zones and including fully implemented saving and loading architecture, enemy and NPC AI, and an extensible character progression and power-up system.",
-    logo: "5GoatGamesIcon.png",
-    opening: [
-      {
-        content:
-          "Five Goat Games is a team of multitalented individuals who all have a passion for video games and game design. Our Capstone project, titled Skelly Tales, was first conceived during a team meeting to discuss project ideas. All four quickly fell in love with the quirky idea and decided to begin the project.",
-      },
-      {
-        content:
-          "Skelly Tales is a 2.5D Metroidvania-style video game set in a light-hearted version of the afterlife. The team will create a well thought-out code architecture for the prototype as well as a fully playable demo of one game zone.",
-      },
-    ],
-    main: "",
-    closing: [
-      {
-        content:
-          "We would like to thank our sponsor and teammate Connor for making this project possible, as well as the Camosun faculty for offering support and guidance through the project’s development. Five Goat Games hopes for Skelly Tales to be a challenging yet fun adventure for all ages.",
-      },
-    ],
-    members: [
-      {
-        name: "Lucius Hall",
-        role: "Head of Written Communications, Technical Writer, Lead VFX Artist, UI/UX Designer, Co-programming Architect, 3D Modeler, and Photo/Video Editor.",
-        description:
-          "Lucius became inspired by his brother to explore web technologies. This led him to discover the Interactive Media Developer program where he acquired a passion for architectural programming, and UI / UX design. Now, he still holds a strong interest in web development and stays up to date with current trends, but for Capstone he decided to explore game development where he focused on system architecture, UI / UX design, VFX design, and technical writing. Upon graduation, Lucius seeks a career that will support his aforementioned passions, and bolster his desire to learn new skills and tinker with new technologies.",
-      },
-      {
-        name: "Tony Woollven",
-        role: "Head of Level Design, Lead SFX Artist, Programmer, 3D Modeler, and VFX Artist.",
-        description:
-          "Tony has enjoyed video games his entire life, and after 12 years in the construction industry, he decided to make game development a career. He began his education in computer science by taking some university transfer courses before discovering that the IMD program would better help him achieve his career goal. He enjoys the problem solving aspect of programming and seeing an idea come to life.\n" +
-          "In his free time he enjoys gaming, playing guitar, riding his bicycle, and listening to music.",
-      },
-      {
-        name: "Yaroslav (Leon) Leontenko",
-        role: "Lead Artist, Programmer, Photo/Video Editor, Animator, Modeler, Designer, Technical Writer, and Web Developer.",
-        description:
-          "Leon was born in a tiny port town of Nahodka, situated in the far east of the vast, snow-ridden country of Russia. After some soul searching and an attempted law degree back in his country, he moved to Victoria 6 years ago to pursue his true passion in arts and computer science. Currently he is simultaneously finishing a Bachelor of Comp Sci at UVic (4th year) and the Interactive Media Developer Diploma at Camosun College (2nd year).\n" +
-          "After successfully completing multiple co-op semesters, being actively involved in numerous group projects and working directly with clients via commissions, Leon is extremely enthusiastic about pursuing the future career opportunities that the Interactive Media field provides.\n" +
-          "In his free time, Leon enjoys creating 2D and 3D art, learning new languages and practicing sports such as cycling and kickboxing.",
-      },
-      {
-        name: "Connor Yutani-Patterson",
-        role: "Project Lead, 3D Modeler, Character Rigger, Animator, Video/Photo Editor, Lead Programming Architect, and Lead World/Character Designer.",
-        description:
-          "Connor recently became a permanent resident of Canada and moved to the Greater Victoria area where he joined the Interactive Media Developer Program in order to follow his lifelong passion for programming and game design. Now in his final semester with the program, Connor has a strong focus on both visual design and programming architecture. Taking on the role of project lead in his team's capstone project Connor also devised the programming architecture used in the project.",
       },
     ],
   },
