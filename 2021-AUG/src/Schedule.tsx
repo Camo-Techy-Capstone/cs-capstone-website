@@ -32,19 +32,25 @@ const useStyles = makeStyles(theme => ({
         width: '200px',
         margin: '10px auto',
     },
+    specialCell:{
+      fontWeight: 'bold',
+      fontSize: 20,
+      marginLeft: '250px',
+    },
 }));
 
 type TeamInfoType = {
   name: string;
   teamId?: string;
   link?: string;
+  colSpan?: number;
 };
 
 type Props = {
   scheduleList: Array<{
     timeSlot?: string;
     firstGroup: TeamInfoType;
-    secondGroup: TeamInfoType;
+    secondGroup?: TeamInfoType;
   }>;
 };
 
@@ -91,12 +97,22 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
                 <StyledTableCell component="th" scope="row">
                   {row.timeSlot}
                 </StyledTableCell>
-                <StyledTableCell align="right">
-                  <TeamLink teamInfo={row.firstGroup} />
-                </StyledTableCell>
-                <StyledTableCell align="right">
-                  <TeamLink teamInfo={row.secondGroup} />
-                </StyledTableCell>
+                
+                {
+                  row.secondGroup ? (
+                    <>
+                      <StyledTableCell align="right">
+                        <TeamLink teamInfo={row.firstGroup} />
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        <TeamLink teamInfo={row.secondGroup} />
+                      </StyledTableCell>
+                    </>) : (
+                      <StyledTableCell colSpan={2} align="center" size="medium">
+                        <div className={classes.specialCell}>{ row.firstGroup.name } </div>
+                      </StyledTableCell>
+                  )
+                }
               </TableRow>
             ))}
           </TableBody>

@@ -84,10 +84,7 @@ const getSchedules = () => {
     firstGroup: {
       name: "Kick off",
       link: "#",
-    },
-    secondGroup: {
-      name: "Kick off",
-      link: "#",
+      colSpan: 2,
     },
   });
   current.add(15, "minutes");
@@ -111,10 +108,7 @@ const getSchedules = () => {
           firstGroup: {
             name: "Lunch",
             link: "#",
-          },
-          secondGroup: {
-            name: "Lunch",
-            link: "#",
+            colSpan: 2,
           },
         });
         current.add(15, "minutes");
@@ -138,10 +132,7 @@ const getSchedules = () => {
         firstGroup: {
           name: "Conclusion",
           link: "#",
-        },
-        secondGroup: {
-          name: "Conclusion",
-          link: "#",
+          colSpan: 2,
         },
       });
       current.add(15, "minutes");
@@ -152,10 +143,7 @@ const getSchedules = () => {
           firstGroup: {
             name: "Network",
             link: "#",
-          },
-          secondGroup: {
-            name: "Network",
-            link: "#",
+            colSpan: 2,
           },
         });
         current.add(15, "minutes");
