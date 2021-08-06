@@ -12,6 +12,7 @@ const StyledTitle = styled(Typography)({
   fontSize: `4rem`,
   fontWeight: `bold`,
   color: `${theme.palette.secondary.main}`,
+  textShadow: `3px 3px ${theme.palette.primary.dark}`
 })
 
 const GreetingWrapper = styled(Box)(({theme})=>({
