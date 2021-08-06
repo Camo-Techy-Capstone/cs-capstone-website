@@ -28,7 +28,7 @@ const Header = () => {
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           <a
-            href="https://capstone.camosun.bc.ca/cosc"
+            href="https://capstone.camosun.bc.ca/cosc/2021/"
             style={{ color: "white", textDecoration: "none" }}
           >
             Computer Science Capstone Symposium 2021
