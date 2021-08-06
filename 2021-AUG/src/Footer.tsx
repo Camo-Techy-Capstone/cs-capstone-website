@@ -31,6 +31,7 @@ const Footer = () => {
             <Button
               variant="contained"
               color="secondary"
+              style={{marginBottom: '5px'}}
               href="https://capstone.camosun.bc.ca/"
             >
               Capstone Home
