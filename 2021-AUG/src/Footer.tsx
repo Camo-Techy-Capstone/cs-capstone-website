@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Typography } from "@material-ui/core";
+import { AppBar, Box, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -26,8 +26,16 @@ const Footer = () => {
               Created by the Computer Science graduating class of 2021
             </Typography>
             <Typography>
-              &copy; {new Date().getFullYear()}: Camosun College
+              &copy; 2021 Camosun College
             </Typography>
+            <Button
+              variant="contained"
+              color="secondary"
+              style={{marginBottom: '5px'}}
+              href="https://capstone.camosun.bc.ca/"
+            >
+              Capstone Home
+            </Button>
         </Box>
         
     </AppBar>

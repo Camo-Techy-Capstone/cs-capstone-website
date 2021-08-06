@@ -1,11 +1,20 @@
 import React from 'react';
 import { Grid, Typography, Box, Divider } from "@material-ui/core";
 import { styled } from '@material-ui/core/styles'
+import theme from './theme';
 
 const Logo = styled('img')({
-  width: `280px`,
+  maxWidth: `280px`,
+  width: `100%`,
   height: `auto`,
 });
+
+const StyledTitle = styled(Typography)({
+  fontSize: `4rem`,
+  fontWeight: `bold`,
+  color: `${theme.palette.secondary.main}`,
+  textShadow: `3px 3px ${theme.palette.primary.dark}`
+})
 
 const GreetingWrapper = styled(Box)(({theme})=>({
   [theme.breakpoints.down("md")]: {
@@ -20,9 +29,9 @@ const GreetingTitle = styled(Typography)({
 });
 
 const GreetingBody = styled(Typography)({
-  marginTop: `4px`,
-  marginBottom: `4px`,
-  fontSize: `0.8rem`,
+  marginTop: `8px`,
+  marginBottom: `8px`,
+  fontSize: `0.9rem`,
 });
 
 const Signature = styled(Typography)({
@@ -41,23 +50,38 @@ const greetingFromSaryta = [
   `These Technologists are our industry’s greatest asset. Each one has skill and professionalism beyond their experience and each one now looks to industry for a foundation from which to thrive.`
 ];
 
-// TODO: work out a better signature for Saryta
+
 const CapstoneWelcome = () => {
   return (
     <Box mb={8}>
-      <Box textAlign="center" my={5}><Logo src="/cosc/2021/images/cs-imd_symp21_logo.png"/></Box>
-      <Box my={5}><Divider/></Box>
-      <Grid container spacing={3}>
-        <GreetingWrapper>
-          {greetingFromSaryta.map((paragraph, index) => {
-            if (index === 0) {
-              return <GreetingTitle variant="h1">{paragraph}</GreetingTitle>
-            } else {
-              return <GreetingBody variant="body1">{paragraph}</GreetingBody>
-            }
-          })}
-          <Signature variant="body2">- Saryta Schaerer, Chair of Computer Science Department</Signature>
-        </GreetingWrapper>
+      <Grid container spacing={1} alignItems="center" direction="row">
+        <Grid item sm={6} md={3}>
+          <Logo 
+            src="/cosc/2021/images/cs-imd_symp21_logo.png"
+            />
+        </Grid>
+        <Grid item sm>
+          <StyledTitle variant="h1">
+            Computer Science Capstone Symposium 2021
+          </StyledTitle>
+        </Grid>
+      </Grid>
+      <Box my={5}>
+        <Divider/>
+      </Box>
+      <Grid container spacing={3} justify="center">
+        <Grid item md={8}>
+          <GreetingWrapper>
+            {greetingFromSaryta.map((paragraph, index) => {
+              if (index === 0) {
+                return <GreetingTitle variant="h1">{paragraph}</GreetingTitle>
+              } else {
+                return <GreetingBody variant="body1">{paragraph}</GreetingBody>
+              }
+            })}
+            <Signature variant="body2">- Saryta Schaerer, Chair of Computer Science Department</Signature>
+          </GreetingWrapper>
+        </Grid>
       </Grid>
       <Box my={5}><Divider/></Box>
     </Box>
