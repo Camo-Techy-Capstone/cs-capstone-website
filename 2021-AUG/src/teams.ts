@@ -6,7 +6,7 @@ const teams = [
       "Is creating a Microsoft Teams extension based on a Slack communication app made by Metl Solutions Inc.",
     opening: [
       {
-        tittle: "Project Description",
+        title: "Project Description",
         content:
           "Metl Solutions Inc. is a startup developed to provide tools for analyzing and improving meeting discussions in online workplaces. The MS Teams Metl App project attempts to copy the functionality of an existing Metl Slack app onto an app on Microsoft Teams. Functionality includes features ranging from asking users ice-breaker questions, sending users links to a video call room, and integrating into Metl’s existing API and web app.",
       },
@@ -100,7 +100,7 @@ const teams = [
     name: "The Code Queens",
     project: "Utopian Moon: Salvage Run!",
     intro:
-      "is an immersive space race game created in Unity featuring completely original models, customized physics, intelligent procedural level generation, and integration with a server-side authentication and scoreboard system for competitive play.",
+      "Utopian Moon: Salvage Run! is an immersive space race game created in Unity featuring completely original models, customized physics, intelligent procedural level generation, and integration with a server-side authentication and scoreboard system for competitive play.",
     logo: "3TreesGames.png",
     opening: [
       {
