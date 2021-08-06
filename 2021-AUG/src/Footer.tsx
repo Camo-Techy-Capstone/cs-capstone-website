@@ -30,7 +30,7 @@ const Footer = () => {
             </Typography>
             <Button
               variant="contained"
-              color="default"
+              color="secondary"
               href="https://capstone.camosun.bc.ca/"
             >
               Capstone Home

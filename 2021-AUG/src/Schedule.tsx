@@ -17,7 +17,7 @@ import { withStyles, makeStyles } from "@material-ui/core/styles";
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.secondary.main,
     color: theme.palette.common.white,
     fontsize: 20,
   },
@@ -75,7 +75,7 @@ const Schedule = ({ scheduleList }: Props): ReactElement => {
         </Typography>
         <Typography variant="subtitle1" align="center">
         {/* will add the link later on */}
-          <Link target="_blank" href="https://camosun-ca.zoom.us/j/61630151922?pwd=dmNOa0I5RTJ5QjVCaG5FT1g5QXRhdz09">Main room </Link>
+          <Link target="_blank" color="secondary" href="https://camosun-ca.zoom.us/j/61630151922?pwd=dmNOa0I5RTJ5QjVCaG5FT1g5QXRhdz09">Main room </Link>
         </Typography>
         <Typography variant="subtitle1" align="center">
         <b>Meeting ID:</b> 616 3015 1922
