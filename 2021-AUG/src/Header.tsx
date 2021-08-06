@@ -2,6 +2,7 @@ import React from "react";
 import { AppBar, Box, Toolbar, Typography } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+import theme from './theme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,12 +13,26 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    color: "white",
+    color: theme.palette.primary.dark,
+    textDecoration: `none`,
+  },
+  navlink: {
+    color: theme.palette.primary.dark,
+    textDecoration: `none`,
+    "&:active": {
+      color: theme.palette.secondary.main,
+      fontWeight: 'bold',
+    },
+    "&.selected": {
+      color: theme.palette.secondary.main,
+      fontWeight: 'bold',
+    },
   },
   links: {
     "& > * + *": {
       marginLeft: theme.spacing(2),
     },
+    textDecoration: `none`,
   },
 }));
 
@@ -28,8 +43,9 @@ const Header = () => {
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           <a
+            className={classes.links}
+            style={{ color: `inherit` }}
             href="https://capstone.camosun.bc.ca/cosc/2021/"
-            style={{ color: "white", textDecoration: "none" }}
           >
             Computer Science Capstone Symposium 2021
           </a>
@@ -37,36 +53,37 @@ const Header = () => {
         <Typography className={classes.links}>
           <NavLink
             to="/"
-            style={{ color: "white", textDecoration: "none" }}
-            activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
+            exact={true}
+            className={classes.navlink}
+            activeClassName="selected"
           >
             Teams
           </NavLink>
           <NavLink
             to="/schedule"
-            style={{ color: "white", textDecoration: "none" }}
-            activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
+            className={classes.navlink}
+            activeClassName="selected"
           >
             Schedule
           </NavLink>
           <a
+            className={classes.navlink}
             href="https://www.eventbrite.ca/e/camosun-ics-capstone-symposium-2021-registration-164049940789"
             target="_blank"
-            style={{ color: "white", textDecoration: "none" }}
           >
             Register
           </a>
           <a
+            className={classes.navlink}
             href="https://www.surveymonkey.ca/r/Capstone2021Award"
             target="_blank"
-            style={{ color: "white", textDecoration: "none" }}
           >
             Voting
           </a>
           <NavLink
             to="/donors"
-            style={{ color: "white", textDecoration: "none" }}
-            activeStyle={{ fontWeight: "bold", textDecoration: "underline" }}
+            className={classes.navlink}
+            activeClassName="selected"
           >
             Donors
           </NavLink>

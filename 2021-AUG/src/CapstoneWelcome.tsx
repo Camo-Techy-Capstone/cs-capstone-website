@@ -1,11 +1,18 @@
 import React from 'react';
 import { Grid, Typography, Box, Divider } from "@material-ui/core";
 import { styled } from '@material-ui/core/styles'
+import theme from './theme';
 
 const Logo = styled('img')({
   width: `280px`,
   height: `auto`,
 });
+
+const StyledTitle = styled(Typography)({
+  fontSize: `4rem`,
+  fontWeight: `bold`,
+  color: `${theme.palette.secondary.main}`,
+})
 
 const GreetingWrapper = styled(Box)(({theme})=>({
   [theme.breakpoints.down("md")]: {
@@ -41,12 +48,23 @@ const greetingFromSaryta = [
   `These Technologists are our industry’s greatest asset. Each one has skill and professionalism beyond their experience and each one now looks to industry for a foundation from which to thrive.`
 ];
 
-// TODO: work out a better signature for Saryta
+
 const CapstoneWelcome = () => {
   return (
     <Box mb={8}>
-      <Box textAlign="center" my={5}><Logo src="/cosc/2021/images/cs-imd_symp21_logo.png"/></Box>
-      <Box my={5}><Divider/></Box>
+      <Grid container spacing={1} alignItems="center" direction="row">
+        <Grid item sm={3}>
+          <Logo src="/cosc/2021/images/cs-imd_symp21_logo.png"/>
+        </Grid>
+        <Grid item sm={8}>
+          <StyledTitle variant="h1">
+            Computer Science Capstone Symposium 2021
+          </StyledTitle>
+        </Grid>
+      </Grid>
+      <Box my={5}>
+        <Divider/>
+      </Box>
       <Grid container spacing={3}>
         <GreetingWrapper>
           {greetingFromSaryta.map((paragraph, index) => {
