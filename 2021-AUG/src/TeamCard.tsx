@@ -36,7 +36,7 @@ const TeamCard = (props: Props) => {
   const { name, intro, logo } = props;
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea href={`/teams/${slugify(name)}`}>
         <CardMedia
           className={classes.media}
           style={{ backgroundSize: "contain" }}
