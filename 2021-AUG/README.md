@@ -23,3 +23,11 @@ or:
 ## The idea behind the example
 
 This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app) with [TypeScript](https://github.com/Microsoft/TypeScript).
+
+## How to deploy
+
+```sh
+npm run build
+rm -rf ../2021/*
+cp -rp ./build/* ../2021/
+```
