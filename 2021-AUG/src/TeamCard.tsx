@@ -36,23 +36,28 @@ const TeamCard = (props: Props) => {
   const { name, intro, logo } = props;
   return (
     <Card className={classes.root}>
-      <CardActionArea href={`/teams/${slugify(name)}`}>
-        <CardMedia
-          className={classes.media}
-          style={{ backgroundSize: "contain" }}
-          image={`/cosc/2021/images/logos/${logo}`}
-          title={name}
-        />
-        <CardContent>
-          <Typography gutterBottom className={classes.bold} component="h2">
-            {name}
-          </Typography>
-          <Box maxHeight="60px" textOverflow="ellipsis" overflow="auto">
-            <Typography variant="body2" color="textSecondary" component="p">
-              {intro}
+      <CardActionArea>
+        <Link
+          to={`/teams/${slugify(name)}`}
+          style={{ textDecoration: "none" , color: "black" }}
+        >
+          <CardMedia
+            className={classes.media}
+            style={{ backgroundSize: "contain" }}
+            image={`/cosc/2021/images/logos/${logo}`}
+            title={name}
+          />
+          <CardContent>
+            <Typography gutterBottom className={classes.bold} component="h2">
+              {name}
             </Typography>
-          </Box>
-        </CardContent>
+            <Box maxHeight="60px" textOverflow="ellipsis" overflow="auto">
+              <Typography variant="body2" color="textSecondary" component="p">
+                {intro}
+              </Typography>
+            </Box>
+          </CardContent>
+        </Link>  
       </CardActionArea>
       <CardActions>
         <Typography>
