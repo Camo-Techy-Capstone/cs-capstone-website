@@ -14,6 +14,7 @@ export interface Team {
   name: string;
   project?: string;
   logo: string;
+  presentation?: string;
   intro: string;
   opening: Paragraph[];
   closing: Paragraph[];

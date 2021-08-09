@@ -21,7 +21,7 @@ const TeamBios = () => {
 
   window.scrollTo(0, 0);
 
-  const { name, project, logo, opening, closing, members } = team;
+  const { name, project, logo, opening, closing, members, presentation } = team;
   return (
     <Container maxWidth="md">
       <Box textAlign="center" my={4}>
@@ -42,6 +42,9 @@ const TeamBios = () => {
       {closing.map((paragraph, index) => (
         <Paragraph paragraph={paragraph} key={index} />
       ))}
+      <Box>
+        <iframe width="100%" height="550" frameBorder="0" src={presentation} allow="autoplay; encrypted-media" allowFullScreen></iframe>
+      </Box>
     </Container>
   );
 };
