@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter, Redirect } from "react-router-dom";
 import AppRoute from "./AppRoute";
 import Home from "./Views/Home";
 import PresentationStage from "./Views/PresentationStage";
@@ -14,6 +14,7 @@ export const AppRouter = () => {
       <AppRoute exact path="/teams/:slug" component={TeamBios} />
       <AppRoute exact path="/schedule" component={PresentationStage} />
       <AppRoute exact path="/donors" component={Donors} />
+      <Redirect to="/" />
     </BrowserRouter>
   );
 };
