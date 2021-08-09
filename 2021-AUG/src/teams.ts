@@ -2,7 +2,7 @@ const teams = [
   {
     name: "Team Metl",
     logo: "metl.png",
-    presentation: "https://vimeo.com/584768925/7e164a4c21",
+    presentation: "https://player.vimeo.com/video/584768925",
     intro:
       "Is creating a Microsoft Teams extension based on a Slack communication app made by Metl Solutions Inc.",
     opening: [
@@ -41,7 +41,7 @@ const teams = [
     intro:
       "MyLivingCity web application works as a tool to create and support community projects that encourage change.",
     logo: "my_living_city_logo512x512.png",
-    presentation: "https://vimeo.com/584970445/7747736448",
+    presentation: "https://player.vimeo.com/video/584970445",
     opening: [
       {
         title: "Introduction",
@@ -104,7 +104,7 @@ const teams = [
     intro:
       "Utopian Moon: Salvage Run is an immersive space race game created in Unity featuring completely original models, customized physics, intelligent procedural level generation, and integration with a server-side authentication and scoreboard system for competitive play.",
     logo: "3TreesGames.png",
-    presentation: "https://vimeo.com/584759414/72d2998bb6",
+    presentation: "https://player.vimeo.com/video/584759414",
     opening: [
       {
         content:
@@ -144,7 +144,7 @@ const teams = [
     intro:
       "Archio is a video archival website where users can share recordings, transcriptions and translations of their oral histories and storytelling traditions, to prevent changing technologies and lifestyles from erasing historic knowledge.",
     logo: "Archio.png",
-    presentation: "https://vimeo.com/584758928/5ad8e9e54c",
+    presentation: "https://player.vimeo.com/video/584758928",
     opening: [
       {
         content:
@@ -214,7 +214,7 @@ const teams = [
     intro:
       "Rental Connections will transform the renting experience for both tenants and landlords with its user-friendly, inclusive, and rental focused design.",
     logo: "RC_lg_logo.png",
-    presentation: "https://vimeo.com/584985039/b81e823734",
+    presentation: "https://player.vimeo.com/video/584985039",
     opening: [
       {
         title: "Sponsor & Project Introduction",
@@ -317,7 +317,7 @@ const teams = [
     intro:
       'A traversable and interactable 3D simulation derived from scans of ship interiors called "point cloud scans" after converting them into mesh.',
     logo: "3ga-logo-large.png",
-    presentation: "https://vimeo.com/584737775/3452c1ad03",
+    presentation: "https://player.vimeo.com/video/584737775",
     opening: [
       {
         content:
@@ -361,7 +361,7 @@ const teams = [
     intro:
       "Using Dyspatch's AMP enhanced markup language to create live updating and interactive email applications that live in the inbox.",
     logo: "Dyspatch-Logo-Dark-1800.png",
-    presentation: "https://vimeo.com/584967864/50980fe995",
+    presentation: "https://player.vimeo.com/video/584967864",
     opening: [
       {
         content:
@@ -401,7 +401,7 @@ const teams = [
     intro:
       "We offer a safe place for clients and healers to meet. In this platform, healers can share their gifts, clients can search for their best healer match, and record their healing progress.",
     logo: "Unforgettables_logo.png",
-    presentation: "https://vimeo.com/584982005/93d5169531",
+    presentation: "https://player.vimeo.com/video/584982005",
     opening: [
       {
         content:
@@ -442,7 +442,7 @@ const teams = [
     intro:
       "An iOS application able to connect to and interact with multiple MeepMeep disc golf trackers to aid in locating wayward discs.",
     logo: "Meep Meep Icon.png",
-    presentation: "https://vimeo.com/584955474/85b284b607",
+    presentation: "https://player.vimeo.com/video/584955474",
     opening: [
       {
         content:
@@ -521,7 +521,7 @@ const teams = [
     intro:
       "Safe-T-Peg is an android application designed to revolutionize the mental health space by connecting distressed individuals with their loved ones, putting an end to loneliness and isolation.",
     logo: "Safe-T-Peg-Logo-01.png",
-    presentation: "https://vimeo.com/584974512/29dacad6be",
+    presentation: "https://player.vimeo.com/video/584974512",
     opening: [
       {
         content:
@@ -559,7 +559,7 @@ const teams = [
     intro:
       "Team Five Goat Games is creating a 2.5D Metroidvania style platforming video game prototype spanning two playable zones and including fully implemented saving and loading architecture, enemy and NPC AI, and an extensible character progression and power-up system.",
     logo: "5GoatGamesIcon.png",
-    presentation: "https://vimeo.com/584748983/d1835aa3f3",
+    presentation: "https://player.vimeo.com/video/584748983",
     opening: [
       {
         content:
