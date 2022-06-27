@@ -2,15 +2,25 @@
   "dependencies": {
     "moment": "^2.29.1"
   },
-    "name": "node-showdown-ssg",
+  "name": "node-showdown-ssg",
   "version": "1.0.0",
   "description": "A Static Site Generator that uses **Node.js** and **[Showdown](https://github.com/showdownjs/showdown)** to convert markdown files into html.",
   "main": "build_html.js",
   "scripts": {
+    "start": "node index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://github.com/scottjonesdev/Node-showdown-SSG#readme",
   "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.7.1",
     "showdown": "^1.9.1"
   }
 }
