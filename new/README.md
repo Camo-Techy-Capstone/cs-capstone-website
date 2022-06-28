@@ -1,12 +1,9 @@
-# Instructions for using SSG functionality - Capstone 2022
+# Instructions for using SSG functionality
 This is a Static Site Generator that uses **Node.js** and **[Showdown](https://github.com/showdownjs/showdown)** to convert markdown files into html. 
 
-## Setup
+## Setup 
 
 ### Install Node.js
-
-### Move Into 'new' Directory
-	cd new
 
 ### Install Package
 	npm install
