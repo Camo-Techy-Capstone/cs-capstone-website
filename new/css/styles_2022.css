@@ -98,3 +98,37 @@ h3 {
 .border-radius {
   border-radius: var(--border-radius);
 }
+
+.inner-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait-img {
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  margin-top: -40px; 
+  margin-right: 10px;
+  float: left;
+}
+
+.project-card {
+  width: 30%;
+  padding: 20px;
+  transition-duration: 1s;
+}
+
+.project-card:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .portrait-img {
+    width: 20%;
+  }
+}
