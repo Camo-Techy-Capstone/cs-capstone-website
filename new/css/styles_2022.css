@@ -2,6 +2,9 @@
 
 html {
   font-size: 100%;
+  background-color: var(--clr-secondary-300);
+  color: #fff;
+  padding: 2%;
 } /*16px*/
 
 :root {
@@ -52,7 +55,7 @@ button {
 }
 
 a {
-  color: var(--clr-secondary-500);
+  color: var(--clr-secondary-300);
   transition-duration: 0.5s;
 }
 
@@ -105,6 +108,23 @@ h3 {
   font-size: var(--fnt-size-subheading1);
 }
 
+nav a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px; 
+}
+
+nav {
+  border-bottom: 1px solid;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+
 .border-radius {
   border-radius: var(--border-radius);
 }
@@ -133,10 +153,10 @@ h3 {
 .project-card {
   display: inline-block;
   padding: 4px;
+  border-radius: var(--border-radius);
   text-align: center;
   width: 85%;
-  background-color: #F1F1F1;
-  color: #758B7A;
+  background-color: #fff;
   transition-duration: 0.5s;
   margin: 10px;
 }
@@ -147,6 +167,10 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  nav a {
+    font-size: 1.5rem;
+    margin-right: 20px; 
+  }
   .portrait-img {
     width: 20%;
   }
