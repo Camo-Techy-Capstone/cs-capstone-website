@@ -2,6 +2,9 @@
 
 html {
   font-size: 100%;
+  background-color: var(--clr-secondary-300);
+  color: #fff;
+  padding: 2%;
 } /*16px*/
 
 :root {
@@ -48,6 +51,16 @@ html {
 a,
 button {
   cursor: revert;
+  text-decoration: none;
+}
+
+a {
+  color: var(--clr-secondary-300);
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: var(--clr-secondary-200); 
 }
 
 body {
@@ -95,6 +108,23 @@ h3 {
   font-size: var(--fnt-size-subheading1);
 }
 
+nav a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px; 
+}
+
+nav {
+  border-bottom: 1px solid;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+
 .border-radius {
   border-radius: var(--border-radius);
 }
@@ -116,10 +146,19 @@ h3 {
   float: left;
 }
 
+.card-directory {
+  text-align: center;
+}
+
 .project-card {
-  width: 30%;
-  padding: 20px;
-  transition-duration: 1s;
+  display: inline-block;
+  padding: 4px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 85%;
+  background-color: #fff;
+  transition-duration: 0.5s;
+  margin: 10px;
 }
 
 .project-card:hover {
@@ -128,7 +167,33 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  nav a {
+    font-size: 1.5rem;
+    margin-right: 20px; 
+  }
   .portrait-img {
     width: 20%;
+  }
+  .project-card {
+    width: 30%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1107) {
+
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body {
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
