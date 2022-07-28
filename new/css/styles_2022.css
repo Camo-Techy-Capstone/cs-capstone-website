@@ -48,6 +48,16 @@ html {
 a,
 button {
   cursor: revert;
+  text-decoration: none;
+}
+
+a {
+  color: var(--clr-secondary-500);
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: var(--clr-secondary-200); 
 }
 
 body {
@@ -116,10 +126,19 @@ h3 {
   float: left;
 }
 
+.card-directory {
+  text-align: center;
+}
+
 .project-card {
-  width: 30%;
-  padding: 20px;
-  transition-duration: 1s;
+  display: inline-block;
+  padding: 4px;
+  text-align: center;
+  width: 85%;
+  background-color: #F1F1F1;
+  color: #758B7A;
+  transition-duration: 0.5s;
+  margin: 10px;
 }
 
 .project-card:hover {
@@ -130,5 +149,27 @@ h3 {
 @media only screen and (min-width: 768px) {
   .portrait-img {
     width: 20%;
+  }
+  .project-card {
+    width: 30%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1107) {
+
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body {
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
