@@ -55,12 +55,22 @@ button {
 }
 
 a {
+  color: var(--clr-neutral-200);
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--clr-neutral-300); 
+}
+
+.project-card a {
   color: var(--clr-secondary-300);
   transition-duration: 0.5s;
 }
 
-a:hover {
-  color: var(--clr-secondary-200); 
+.project-card a:hover {
+  color: var(--clr-secondary-200);
 }
 
 body {
@@ -71,12 +81,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-ol,
-ul,
-menu {
-  list-style: none;
 }
 
 h1,

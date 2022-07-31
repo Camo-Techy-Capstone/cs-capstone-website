@@ -60,4 +60,7 @@ Lawrence Bierworth has always had an interest in technology, problem solving, an
 ## Conclusion
 Team SSL is grateful to have the opportunity to work with Divii and aims to meet the challenge of the project with professionalism and excellence.  SSL believes it can meet Divii’s needs and go beyond by the conclusion of the Capstone Project.
 
+## Website
+Check out team SSL's website <a href="https://ssl-capstone.ca">here</a>.
+
 
