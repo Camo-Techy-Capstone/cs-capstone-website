@@ -1,5 +1,6 @@
 //import filesystem module
 const fs = require('fs');
+const path = require('path');
 
 //include showdown module for node
 const showdown  = require('showdown');
@@ -12,9 +13,14 @@ const footer = fs.readFileSync(process.cwd() + "/" + 'partials/footer.md').toStr
 //read all files in content folder
 const contentPath = "content";
 const contentFiles = fs.readdirSync(contentPath);
+const mdFiles = [];
+contentFiles.forEach(file => {
+  if (path.extname(file) == ".md")
+	mdFiles.push(file);
+})
 
 //for each content file, convert md to html and concatenate content with partials (head, header, footer)
-for (let file of contentFiles){
+for (let file of mdFiles){
 	const content = fs.readFileSync(process.cwd() + "/" + contentPath + '/' + file).toString();
 	const converter = new showdown.Converter();
 	const bodyContent = converter.makeHtml(content);
