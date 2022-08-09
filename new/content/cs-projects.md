@@ -31,22 +31,22 @@
 	</a>
 	</div>
 	<div class="project-card" markdown="1">
-	<a href="#">
+	<a href="cs-team-g11.html">
 		<h3>Team G11</h3>
 	</a>
 	</div>
 	<div class="project-card" markdown="1">
-	<a href="#">
-		<h3>Team I</h3>
+	<a href="cs-team-sigmabrains.html">
+		<h3>Team SigmaBrains</h3>
 	</a>
 	</div>
 	<div class="project-card" markdown="1">
-	<a href="#">
+	<a href="cs-team-j.html">
 		<h3>Team J</h3>
 	</a>
 	</div>
 	<div class="project-card" markdown="1">
-	<a href="#">
+	<a href="cs-team-sea.html">
 		<h3>Team SEA</h3>
 	</a>
 	</div>
