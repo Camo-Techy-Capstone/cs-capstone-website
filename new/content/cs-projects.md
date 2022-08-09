@@ -1,17 +1,17 @@
 # Computer Science Projects
 <div class="card-directory">
 	<div class="project-card" markdown="1">
-	<a href="#">
+	<a href="cs-team-a.html">
 		<h3>Team A</h3>
 	</a>
 	</div>
 	<div class="project-card" markdown="1">
-	<a href="#">
-		<h3>Team B</h3>
+	<a href="cs-team-archipelago.html">
+		<h3>Team Archipelago</h3>
 	</a>
 	</div>
 	<div class="project-card" markdown="1">
-	<a href="#">
+	<a href="cs-team-crankygoose.html">
 		<h3>Team Cranky Goose</h3>
 	</a>
 	</div>
