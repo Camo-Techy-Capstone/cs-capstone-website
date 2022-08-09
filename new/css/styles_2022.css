@@ -64,12 +64,16 @@ a:hover {
   color: var(--clr-neutral-300); 
 }
 
-.project-card a {
+.project-card a, .main-project-card a {
   color: var(--clr-secondary-300);
   transition-duration: 0.5s;
 }
 
 .project-card a:hover {
+  color: var(--clr-secondary-200);
+}
+
+.main-project-card a:hover {
   color: var(--clr-secondary-200);
 }
 
@@ -165,7 +169,28 @@ footer {
   margin: 10px;
 }
 
+.main-card-directory {
+  text-align: center;
+}
+
+.main-project-card {
+  display: inline-block;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  transition-duration: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .project-card:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.main-project-card:hover {
   opacity: 50%;
   cursor: pointer;
 }
@@ -184,8 +209,13 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1107) {
-
+@media only screen and (min-width: 1107px) {
+  .main-project-card {
+    width: 49%;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
