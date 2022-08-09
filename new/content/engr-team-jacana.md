@@ -1,4 +1,4 @@
-# Team Jacanan
+# Team Jacana
 
 ## Project
 
@@ -8,7 +8,7 @@ The Spinaline is a seat insert with an adjustable profile, designed to fit to a 
 <h2>Team Photo</h2>
 <br>
 <div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/jacanan/photo-team-jacanan.jpg" class="portrait-img">
+<img src="team-bios-photos/engr/jacana/photo-team-jacana.jpg" class="portrait-img">
 <br>
 We would like to thank Sacral Solutions, our client, for inventing a product so beneficial to people’s health and for giving us an opportunity to gain real-world experience (e.g. holding meetings, ordering supplies, and managing communications), as well as our instructors, for guiding us through the trickier parts of the Capstone project.
 </div>
