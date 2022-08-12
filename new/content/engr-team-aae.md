@@ -9,52 +9,6 @@ The Totem Rotisserie is designed to revolutionize the totem carving process. By 
 Our product, a modular lifting, rotating, and milling machine will not only be safe to use but easily adjustable. What is more, because the Totem Rotisserie will make totem carving more accessible, it will assist Elders (Knowledge Keepers) to continue carving and passing down their cultural traditions and knowledge to future generations. This will help to revive the totem carving tradition by inspiring younger generations to practice it in a more sustainable way. 
 
 <div class="block" markdown="1">
-<h2>Cailen</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/aae/photo-cailen.JPG" class="portrait-img">
-
-<br>
-</div>
-</div>
-
-<div class="block" markdown="1">
-<h2>Joe</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/aae/photo-joe.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Justin</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/aae/photo-justin.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Kristopher</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/aae/photo-kristopher.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Nick</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/aae/photo-nick.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
 <h2>Team Photo</h2>
 <br>
 <div class="inner-block" markdown="1">

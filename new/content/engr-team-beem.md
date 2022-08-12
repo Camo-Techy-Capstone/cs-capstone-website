@@ -5,43 +5,6 @@
 Our team’s project aims to improve the manufacturing process of Greenroom’s products by streamlining all aspects of the soap creation operation. We have accomplished this by upgrading existing equipment and creating a new soap pressing machine. Our main objectives revolved around decreasing production time by reducing the sticking of the soap to the molds and enabling multiple soap bars to be pressed simultaneously by a single technician.  
 
 <div class="block" markdown="1">
-<h2>Mason</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/beem/photoMasonL.JPG" class="portrait-img">
-
-<br>
-</div>
-</div>
-
-<div class="block" markdown="1">
-<h2>Benjamin</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/beem/photo-benjamin-d.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Ethan</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/beem/photo-ethan.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Evan</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/beem/photo-evan.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
 <h2>Team Photo</h2>
 <br>
 <div class="inner-block" markdown="1">

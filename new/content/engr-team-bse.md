@@ -5,43 +5,6 @@
 Our project's goal is to automatically sauce various sizes of pizza with high repeatability. Our machine is capable of applying sauce to pizzas that are between 8-16 inches. Each pizza can be sauced within 10-30 seconds. This project is the first stage of a multi-stage project that our client has created with the intent to create a machine that can automatically create pizzas in preexisting or new restaurants. 
 
 <div class="block" markdown="1">
-<h2>Sam</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/bse/Photo Sam.JPG" class="portrait-img">
-
-<br>
-</div>
-</div>
-
-<div class="block" markdown="1">
-<h2>Dan</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/bse/photo-dan-f.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Daniel</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/bse/photo-daniel-higgins.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
-<h2>Zander</h2>
-<br>
-<div class="inner-block" markdown="1">
-<img src="team-bios-photos/engr/bse/photo-zander-s.JPG" class="portrait-img">
-
-<br>
-</div>
-
-<div class="block" markdown="1">
 <h2>Team Photo</h2>
 <br>
 <div class="inner-block" markdown="1">
