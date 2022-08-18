@@ -192,6 +192,13 @@ footer p {
 	width: 51px;
 }
 
+.flexbox.test {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 100%;
+}
+
 @media only screen and (min-width: 819px) {
 	/* Main Content */
 	
