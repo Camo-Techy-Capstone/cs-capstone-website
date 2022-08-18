@@ -175,7 +175,7 @@ footer p {
 .portrait-img{
 	width: 20%;
 	height: auto;
-	margin-bottom: 2%;
+	padding-bottom: 0.5%;
 }
 
 
@@ -186,4 +186,5 @@ footer p {
 	.body-content {
 		flex-direction: row;
 	}
+
 }
