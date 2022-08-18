@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
 	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="SSG">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Symposium</title>
-    <link rel="stylesheet" href="css/styles_2022.css">
-  </head>
-</head>
-<header>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="cs-projects.html">Computer Science</a>
-		<a href="mech-projects.html">Mechanical Engineering</a>
-	</nav>
-</header>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="SSG">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Capstone Symposium</title>
+		<!-- Bootstrap CSS CDN -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<!-- Google Fonts CDN -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap" rel="stylesheet">
+		<!-- Bootstrap JS CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<!-- CSS -->
+		<!--<link rel="stylesheet" href="css/styles_2022.css">-->
+		<link rel="stylesheet" href="css/style_test.css">
+	</head>
+	<!--Nav Bar-->
+	<header>
+		<nav class="shadow">
+			<div class="flexbox">
+				<a href="index.html"><img class="logo" src="images/Camosun-Corporate-Logo-Colour.jpg" alt="Camosun College Logo"></a>
+				<a href="cs-projects.html" class="green">Computer Science</a>
+				<a href="mech-projects.html">Mechanical Engineering</a>
+			</div>
+		</nav>
+	</header>
 <body>
-<h1 id="teamsea">Team SEA</h1>
-<h2 id="project">Project</h2>
-<p>New members of BC government teams need a platform for curated resources that are easy to locate, comment on, and discuss. Currently there are a number of different tools that fill parts of the identified need which leads to more duplication and over time a lack of use and orphaned information. The goal of the CITZ Co-op/Capstone 2022 Hybrid-Workplace project team is to create a modern web application as a tool for communities to collaborate.</p>
-<div class="block" markdown="1"><h2>Braden Mitchell</h2>
-<p><br></p>
-<div class="inner-block" markdown="1"><p><img src="team-bios-photos/cs/team-sea/brady.jpeg" class="portrait-img">
-In highschool Braden began his journey in computer science by playing and modifying Minecraft. A programming class in 11th grade reinforced his desire to continue down this path. His creativity and efficiency with regard to solving problems has served him well in the ICS program and he looks forward to bringing what he has learned into a career in software development.
-<br></p></div></div>
-<div class="block" markdown="1"><h2>Zach Bourque</h2>
-<p><br></p>
-<div class="inner-block" markdown="1"><p><img src="team-bios-photos/cs/team-sea/zach.jpeg" class="portrait-img">
-Zach entered the ICS program without any coding experience, and has grown to love it during his time at Camosun. At the moment, he is very interested in Node and web applications. Over the last year, his friend Thomas and he built a music review website viewable at <a href="https://spotlightapp.ca" target="_blank">spotlightapp.ca</a>.
-<br></p></div></div>
-<div class="block" markdown="1"><h2>Brandon Bouchard</h2>
-<p><br></p>
-<div class="inner-block" markdown="1"><p><img src="team-bios-photos/cs/team-sea/brandon.jpeg" class="portrait-img">
-After years of working labour jobs, controlled substance retail jobs, sales jobs, etc. Brandon started an e-commerce company with his spouse and, after realising that he enjoyed problem solving in that setting, he chose to pursue an education in software development and looks forward to applying the skills he learned to solve more complex business problems.
-<br></p></div></div>
-<h2 id="conclusion">Conclusion</h2>
-<p>Team SEA is incredibly thankful for the opportunity and support provided by their project sponsor Robert Kobenter at the government of BC’s CITZ IMB division as well as Adam Kroon and the rest of the team working on the HybridWorkplace project.</p>
-<h2 id="website">Website</h2>
-<p>Check out team SEA's website <a href="https://bottle7.github.io/ENGL-Website/" target="_blank">here</a>.</p>
+	<div class="projectContent">
+		<h1 id="teamsea" class="bold bottomSpace">Team SEA</h1>
+		<h2 id="project" class="bold">Project</h2>
+		<p class="bottomSpace">New members of BC government teams need a platform for curated resources that are easy to locate, comment on, and discuss. Currently there are a number of different tools that fill parts of the identified need which leads to more duplication and over time a lack of use and orphaned information. The goal of the CITZ Co-op/Capstone 2022 Hybrid-Workplace project team is to create a modern web application as a tool for communities to collaborate.</p>
+		
+		<h2 class="bold bottomSpace">Our Team</h2>
+
+		<div class="bottomSpace" markdown="1">
+		<div markdown="1"><img src="team-bios-photos/cs/team-sea/brady.jpeg" class="portrait-img"><h2>Braden Mitchell</h2><p>
+		In highschool Braden began his journey in computer science by playing and modifying Minecraft. A programming class in 11th grade reinforced his desire to continue down this path. His creativity and efficiency with regard to solving problems has served him well in the ICS program and he looks forward to bringing what he has learned into a career in software development.
+		<br></p></div></div>
+		
+		<div class="bottomSpace" markdown="1">
+		<div markdown="1"><img src="team-bios-photos/cs/team-sea/zach.jpeg" class="portrait-img"><h2>Zach Bourque</h2><p>
+		Zach entered the ICS program without any coding experience, and has grown to love it during his time at Camosun. At the moment, he is very interested in Node and web applications. Over the last year, his friend Thomas and he built a music review website viewable at <a href="https://spotlightapp.ca" target="_blank">spotlightapp.ca</a>.
+		<br></p></div></div>
+		
+		<div class="bottomSpace" markdown="1">
+		<div markdown="1"><img src="team-bios-photos/cs/team-sea/brandon.jpeg" class="portrait-img"><h2>Brandon Bouchard</h2><p>
+		After years of working labour jobs, controlled substance retail jobs, sales jobs, etc. Brandon started an e-commerce company with his spouse and, after realising that he enjoyed problem solving in that setting, he chose to pursue an education in software development and looks forward to applying the skills he learned to solve more complex business problems.
+		<br></p></div></div>
+		
+		<h2 id="conclusion" class="bold">Conclusion</h2>
+		<p class="bottomSpace">Team SEA is incredibly thankful for the opportunity and support provided by their project sponsor Robert Kobenter at the government of BC’s CITZ IMB division as well as Adam Kroon and the rest of the team working on the HybridWorkplace project.</p>
+		<h2 id="website" class="bold">Website</h2>
+		<p>Check out team SEA's website <a href="https://bottle7.github.io/ENGL-Website/" target="_blank">here</a>.</p>
+	</div>
 </body>
 <footer>
 	<p>© 2022 Camosun Capstone</p>

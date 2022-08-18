@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
 	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="SSG">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Symposium</title>
-    <link rel="stylesheet" href="css/styles_2022.css">
-  </head>
-</head>
-<header>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="cs-projects.html">Computer Science</a>
-		<a href="mech-projects.html">Mechanical Engineering</a>
-	</nav>
-</header>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="SSG">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Capstone Symposium</title>
+		<!-- Bootstrap CSS CDN -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<!-- Google Fonts CDN -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap" rel="stylesheet">
+		<!-- Bootstrap JS CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<!-- CSS -->
+		<!--<link rel="stylesheet" href="css/styles_2022.css">-->
+		<link rel="stylesheet" href="css/style_test.css">
+	</head>
+	<!--Nav Bar-->
+	<header>
+		<nav class="shadow">
+			<div class="flexbox">
+				<a href="index.html"><img class="logo" src="images/Camosun-Corporate-Logo-Colour.jpg" alt="Camosun College Logo"></a>
+				<a href="cs-projects.html" class="green">Computer Science</a>
+				<a href="mech-projects.html">Mechanical Engineering</a>
+			</div>
+		</nav>
+	</header>
 <body>
-<h1 id="teamsigmabrains">Team SigmaBrains</h1>
-<h2 id="introduction">Introduction</h2>
-<p>Our group, SigmaBrains has been tasked with creating a historical forest cover map converter for NFIS. The concept of this project is to examine certain sections from a scanned, hand-drawn, forest cover map and use the information to create analysis-ready data, which can then be utilized in modeling, simulations and coverage reports from a specific time.</p>
-<h2 id="project">Project</h2>
-<p>The purpose of the tool is to remove distinct dot-dashed lines which make up regions on the map and convert them into polygon-shaped regions. In addition, the labels for the areas enclosed by the dot-dashed lines on the maps are recognized and extracted as meaningful data.</p>
-<div class="block" markdown="1"><h2>Jung-Han Han</h2>
-<p><br></p>
-<div class="inner-block" markdown="1"><p><img src="team-bios-photos/cs/team-i/jhhan.jpg" class="portrait-img">
-Jung-han has been studying in the Information and Computer Systems program in pursuit of a career as a software developer. He enjoys solving technical problems by using his programming skills and knowledge. He is always eager to learn new technologies and incorporate them to solve challenging problems. He has a keen interest in web development, mobile application development, game development, and network programming.<br />
-<br></p></div></div>
-<div class="block" markdown="1"><h2>Joseph Chang</h2>
-<p><br></p>
-<div class="inner-block" markdown="1"><p><img src="team-bios-photos/cs/team-i/jchang.jpg" class="portrait-img">
-Joseph has always had a passion for Technology and enjoys working with others. From a young age, He started out with an interest in robotics and gradually became interested in application programming and development. He enjoys creating games in Unity and is always eager to learn new programming languages. He has developed great team building skills and works well in a team. He has gradually become interested in application development, game development and JavaScript programming. He is moving towards his interest in becoming a security analyst. 
-<br></p></div></div>
-<div class="block" markdown="1"><h2>Christopher Hernandez</h2>
-<p><br></p>
-<div class="inner-block" markdown="1"><p><img src="team-bios-photos/cs/team-i/chernandez.jpg" class="portrait-img">
-Christopher has always wanted to become a developer from a young age. Since 2020 he has been studying at Camosun College looking for a career in the field focusing on the development of the back end of applications. He values teamwork, collaboration and good work environments.
-<br></p></div></div>
-<h2 id="conclusion">Conclusion</h2>
-<p>We would like to give a big thanks to our sponsor NFIS for allowing us to be part of this! We look forward to this opportunity in working with you!</p>
+	<div class="projectContent">
+		<h1 id="teamsigmabrains" class="bold bottomSpace">Team SigmaBrains</h1>
+		<h2 id="introduction" class="bold">Introduction</h2>
+		<p class="bottomSpace">Our group, SigmaBrains has been tasked with creating a historical forest cover map converter for NFIS. The concept of this project is to examine certain sections from a scanned, hand-drawn, forest cover map and use the information to create analysis-ready data, which can then be utilized in modeling, simulations and coverage reports from a specific time.</p>
+		<h2 id="project" class="bold">Project</h2>
+		<p class="bottomSpace">The purpose of the tool is to remove distinct dot-dashed lines which make up regions on the map and convert them into polygon-shaped regions. In addition, the labels for the areas enclosed by the dot-dashed lines on the maps are recognized and extracted as meaningful data.</p>
+		
+		<h2 class="bold bottomSpace">Our Team</h2>
+
+		<div class="bottomSpace" markdown="1">
+		<div markdown="1"><img src="team-bios-photos/cs/team-i/jhhan.jpg" class="portrait-img"><h2>Jung-Han Han</h2><p>
+		Jung-han has been studying in the Information and Computer Systems program in pursuit of a career as a software developer. He enjoys solving technical problems by using his programming skills and knowledge. He is always eager to learn new technologies and incorporate them to solve challenging problems. He has a keen interest in web development, mobile application development, game development, and network programming.<br />
+		<br></p></div></div>
+		
+		<div class="bottomSpace" markdown="1">
+		<div markdown="1"><img src="team-bios-photos/cs/team-i/jchang.jpg" class="portrait-img"><h2>Joseph Chang</h2><p>
+		Joseph has always had a passion for Technology and enjoys working with others. From a young age, He started out with an interest in robotics and gradually became interested in application programming and development. He enjoys creating games in Unity and is always eager to learn new programming languages. He has developed great team building skills and works well in a team. He has gradually become interested in application development, game development and JavaScript programming. He is moving towards his interest in becoming a security analyst. 
+		<br></p></div></div>
+		
+		<div class="bottomSpace" markdown="1">
+		<div markdown="1"><img src="team-bios-photos/cs/team-i/chernandez.jpg" class="portrait-img"><h2>Christopher Hernandez</h2><p>
+		Christopher has always wanted to become a developer from a young age. Since 2020 he has been studying at Camosun College looking for a career in the field focusing on the development of the back end of applications. He values teamwork, collaboration and good work environments.
+		<br></p></div></div>
+		
+		<h2 id="conclusion" class="bold">Conclusion</h2>
+		<p>We would like to give a big thanks to our sponsor NFIS for allowing us to be part of this! We look forward to this opportunity in working with you!</p>
+	</div>
 </body>
 <footer>
 	<p>© 2022 Camosun Capstone</p>

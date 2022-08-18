@@ -199,12 +199,31 @@ footer p {
 	height: 100%;
 }
 
+.projectContent{
+	padding: 5%;
+	font-size: 25px;
+	background-color: #F7F7F7;
+}
+
+.bottomSpace{
+	margin-bottom: 2%;
+}
+
+.portrait-img{
+	width: 20%;
+	height: auto;
+	padding-bottom: 0.5%;
+}
+
+
+
 @media only screen and (min-width: 819px) {
 	/* Main Content */
 	
 	.body-content {
 		flex-direction: row;
 	}
+
 }
 
 @media only screen and (min-width: 1439px) {
