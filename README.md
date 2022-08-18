@@ -6,7 +6,7 @@ This is a Static Site Generator that uses **Node.js** and **[Showdown](https://g
 ### Install Node.js
 
 ### Move Into 'new' Directory
-	cd new
+	cd new/projects
 
 ### Install Package
 	npm install
