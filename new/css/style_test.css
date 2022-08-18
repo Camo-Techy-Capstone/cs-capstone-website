@@ -1,0 +1,167 @@
+/* General */
+
+body {
+	background-color: #FFFFFF;
+	min-width: 802px; /* Fix this */
+}
+
+a {
+	text-decoration: none;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+	font-family: Montserrat;
+	color: #283747;
+}
+
+p {
+	font-family: Cardo;
+	color: #283747;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.green {
+	color: #91BE37;
+}
+
+/* Navbar */
+
+nav .flexbox {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-start;
+	align-items: center;
+	padding: 26px;
+}
+
+nav img {
+	width: 161;
+}
+
+nav a {
+	margin-right: 53px;
+	font-size: 20px;
+	transition-duration: 0.25s;
+}
+
+nav a:hover {
+	color: #91BE37;
+	transition-duration: 0.25s;
+}
+
+/* Page Title */
+
+.page-title {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: 35px;
+	font-size: 35px;
+}
+
+/* Main Content */
+
+.body-content, .body-content-1, .body-content-2 {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.body-content {
+	height: 100%;
+}
+
+.body-content-2 {
+	flex: 1;
+}
+
+.body-content-1-1 {
+	padding: 26px 52px 26px 26px;
+	background-color: #F7F7F7;
+	flex: 1;
+}
+
+.body-content-1-1 h1 {
+	font-size: 35px;
+	margin-bottom: 13px;
+}
+
+.body-content-1-1 h2 {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.body-content-1-1 p {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.body-content-1-1 p:nth-child(5) {
+	margin-bottom: 13px;
+}
+
+.body-content-2-1 {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	font-size: 35px;
+	padding: 26px 52px 26px 26px;
+	background-image: url("../images/pixabay-programming-1873854.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 1;
+}
+
+.body-content-2-1 h1 {
+	font-size: 55px;
+	color: #FFFFFF;
+}
+
+.body-content-2-2 {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	font-size: 35px;
+	padding: 26px 52px 26px 26px;
+	background-image: url("../images/pexels-matej-716661.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 1;
+}
+
+.body-content-2-2 h1 {
+	font-size: 55px;
+	color: #FFFFFF;
+}
+
+footer .flexbox {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-start;
+	align-items: center;
+	background-color: #EBEBEB;
+	padding: 26px;
+}
+
+footer img {
+	height: 64px;
+	margin-right: 26px;
+}
+
+footer p {
+	font-size: 10px;
+	margin: 0px;
+}
+
+@media only screen and (min-width: 855px) {
+	.body-content {
+		flex-direction: row;
+	}
+}
