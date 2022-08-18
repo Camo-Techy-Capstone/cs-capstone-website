@@ -37,7 +37,7 @@ p {
 nav .flexbox {
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-start;
+	justify-content: flex-start;
 	align-items: center;
 	padding: 26px;
 }
@@ -69,11 +69,10 @@ nav a:hover {
 
 /* Main Content */
 
-.body-content, .body-content-1, .body-content-2 {
+.body-content, .body-content-1, .body-content-2, .card-content {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-items: stretch;
 }
 
 .body-content {
@@ -113,7 +112,6 @@ nav a:hover {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	font-size: 35px;
 	padding: 26px 52px 26px 26px;
 	background-image: url("../images/pixabay-programming-1873854.png");
 	background-repeat: no-repeat;
@@ -130,7 +128,6 @@ nav a:hover {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	font-size: 35px;
 	padding: 26px 52px 26px 26px;
 	background-image: url("../images/pexels-matej-716661.jpg");
 	background-repeat: no-repeat;
@@ -143,10 +140,10 @@ nav a:hover {
 	color: #FFFFFF;
 }
 
-footer .flexbox {
+footer .footer-content {
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-start;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: #EBEBEB;
 	padding: 26px;
@@ -162,10 +159,59 @@ footer p {
 	margin: 0px;
 }
 
+.card-content-0 {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center
+}
+
+.card-content-0-1 {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #9CCC3B;
+	width: 100%;
+	height: 165px;
+	margin: 0px 13px 35px 13px;
+}
+
+.card-content-0-0-1 {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+
+.card-content-0-0-1 h1 {
+	font-size: 35px;
+	margin: 26px;
+	color: #FFFFFF;
+}
+
+.accent {
+	background-color: #91BE37;
+	width: 51px;
+}
+
 @media only screen and (min-width: 819px) {
 	/* Main Content */
 	
 	.body-content {
 		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width: 1439px) {
+	/* Main Content */
+	
+	.card-content {
+		flex-direction: row;
+	}
+	
+	.card-content {
+		justify-content: center;
+	}
+	
+	.card-content-0-1 {
+		width: 448px;
 	}
 }
