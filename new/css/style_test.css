@@ -162,6 +162,24 @@ footer p {
 	margin: 0px;
 }
 
+.projectContent{
+	padding: 5%;
+	font-size: 25px;
+	background-color: #F7F7F7;
+}
+
+.bottomSpace{
+	margin-bottom: 2%;
+}
+
+.portrait-img{
+	width: 20%;
+	height: auto;
+	margin-bottom: 2%;
+}
+
+
+
 @media only screen and (min-width: 819px) {
 	/* Main Content */
 	
