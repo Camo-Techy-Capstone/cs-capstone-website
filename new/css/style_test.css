@@ -2,7 +2,8 @@
 
 body {
 	background-color: #FFFFFF;
-	min-width: 802px; /* Fix this */
+	height: 100vh;
+	min-width: 616px; /* Fix this */
 }
 
 a {
@@ -42,7 +43,7 @@ nav .flexbox {
 }
 
 nav img {
-	width: 161;
+	width: 161px;
 }
 
 nav a {
@@ -72,6 +73,7 @@ nav a:hover {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
+	align-items: stretch;
 }
 
 .body-content {
@@ -160,7 +162,9 @@ footer p {
 	margin: 0px;
 }
 
-@media only screen and (min-width: 855px) {
+@media only screen and (min-width: 819px) {
+	/* Main Content */
+	
 	.body-content {
 		flex-direction: row;
 	}
